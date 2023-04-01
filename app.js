@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 
 //**************    MAIN MIDDLEWARES **********************/
 app.use("/images", imageRoutes);
+app.use("/", () => {
+  console.log("image generator");
+});
 
 // Listen on enviroment variable PORT or 3000
 const port = process.env.PORT;
