@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 
-/***************  AUTHENTICATION ROUTES ****************/
 const imageRoutes = require("./routes/images");
 // *************   REQUEST  PARSING MIDDLEWARE ****************//
 app.use(cors());
