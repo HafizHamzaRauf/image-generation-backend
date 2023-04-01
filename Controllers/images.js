@@ -18,9 +18,9 @@ exports.getImageByName = async (req, res) => {
 
     context.fillStyle = "black";
     context.font = `${fontSize}px Arial`;
-    context.textAlign = "center";
-    context.textBaseline = "middle";
-    context.fillText(text, width / 2, height / 2);
+    context.textAlign = "left";
+    context.textBaseline = "top";
+    context.fillText(text, 0, 0);
 
     const buffer = canvas.toBuffer("image/png");
 
